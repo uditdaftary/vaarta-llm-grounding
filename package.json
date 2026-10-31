@@ -1,0 +1,21 @@
+{
+  "name": "vaarta-llm-grounding",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic grounding check for LLM claims, and a classifier that tells a Gemini transport failure from a bad answer.",
+  "license": "MIT",
+  "author": "Udit Daftary",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx test/grounding.test.ts && tsx test/transport.test.ts"
+  },
+  "devDependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@types/node": "^24.19.1",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  }
+}
