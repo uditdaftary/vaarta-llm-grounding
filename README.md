@@ -1,5 +1,7 @@
 # vaarta-llm-grounding
 
+[![ci](https://github.com/uditdaftary/vaarta-llm-grounding/actions/workflows/ci.yml/badge.svg)](https://github.com/uditdaftary/vaarta-llm-grounding/actions/workflows/ci.yml)
+
 Two small checks for pipelines that ask an LLM to write claims from source material.
 
 1. **`validateGrounded`** checks a model-written claim against the numbered sources the model was shown. The claim must cite at least one source, every citation must point at a real source, and every number in the claim must appear in a source. No network call and no second model.
